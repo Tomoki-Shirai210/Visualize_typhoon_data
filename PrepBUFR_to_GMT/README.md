@@ -1,9 +1,9 @@
-# Python script for plotting observation included in prepbufr(by NCEP ds0337.0) using GMT v5.4.5
+# Scripts for plotting data included in prepbufr conventional observational data (NCEP ds0337.0) using GMT v5.4.5
 ### By T., Shirai (Chuo Univ., Japan)
 ### All the codes are now under developing. You may use it freely, but at your own risk.
 
 ## Data preparation
-1. Use rda-ncepbufr-decode program provided by NCEP to decode the original PrepBUFR file
+1. Use rda-ncepbufr-decode program provided by NCEP (You can access the library from [here](https://rda.ucar.edu/datasets/ds337.0/#!software)) to decode the original PrepBUFR file
 For example, 
 ```
 readpb_config.x prepbufr.gdas.20191010.t12z.nr prepbufr.gdas.20191010.t12z ./prepbufr_config
