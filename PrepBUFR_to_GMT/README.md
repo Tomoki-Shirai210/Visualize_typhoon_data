@@ -1,5 +1,5 @@
 # Scripts for plotting data included in prepbufr conventional observational data (NCEP ds0337.0) using GMT v5.4.5
-### By T., Shirai (Chuo Univ., Japan)
+### By T., Shirai 
 ### All the codes are now under developing. You may use it freely, but at your own risk.
 
 ## Data preparation
