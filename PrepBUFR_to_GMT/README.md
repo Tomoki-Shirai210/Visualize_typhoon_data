@@ -18,8 +18,5 @@ readpb_config.x prepbufr.gdas.20191010.t12z.nr prepbufr.gdas.20191010.t12z ./pre
 python3 bufr2gmt.py
 ```
 2. RUN GMT
-
-Following image is the example of the visualization of SATWND (satellite derived wind)
-
 ![mapSATWND](https://user-images.githubusercontent.com/84554010/186373081-2dfb4f42-1207-437d-97c0-7e099702c326.jpg)
 
