@@ -17,6 +17,9 @@ readpb_config.x prepbufr.gdas.20191010.t12z.nr prepbufr.gdas.20191010.t12z ./pre
 ```
 python3 bufr2gmt.py
 ```
+You will get .txt files that are formatted as 'lon, lat, variable'
+
 2. RUN GMT
+Required GMT version is 5.4.5 (You can access the GMT5.4.5 from [here](https://github.com/GenericMappingTools/gmt/releases/tag/5.4.5))
 ![mapSATWND](https://user-images.githubusercontent.com/84554010/186373081-2dfb4f42-1207-437d-97c0-7e099702c326.jpg)
 
