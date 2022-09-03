@@ -1,4 +1,4 @@
-# Scripts for plotting data included in prepbufr conventional observational data (NCEP ds0337.0) using GMT v5.4.5
+# Scripts for plotting observational data included in prepbufr file (NCEP ds337.0) using GMT v5.4.5
 ### By T., Shirai 
 ### All the codes are now under developing. You may use it freely, but at your own risk.
 
@@ -10,6 +10,7 @@ readpb_config.x prepbufr.gdas.20191010.t12z.nr prepbufr.gdas.20191010.t12z ./pre
 ```
 
 ## Requirements
+- rda-ncepbufr-decode (provided by NCEP)
 - Python (numpy)
 
 ## Usage
