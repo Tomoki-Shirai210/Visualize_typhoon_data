@@ -1,6 +1,6 @@
 ###Python program to make gmt5.4.5 input for ncep prepbufr observation 
-###Last Edited 20220903 T., Shirai (v2.0)
-#Notion: Please execute [readpb_config.x] first using ncepbufrlib. 
+###Last Edited 20220824 T., Shirai
+#
 #P = Pressure [mb]
 #Q = Specific Humidity [MG/KG] 
 #T = Temp [DEG C]
@@ -17,7 +17,7 @@ import os
 #obsdate='20220831.t00z'
 
 files = []
-files = os.listdir("./bufr/data")
+files = os.listdir("./data")
 print("Files are: ",files)
 #inf='prepbufr.gdas.20220831.t00z.ADPSFC'
 #inf='prepbufr.gdas.20220831.t00z.SFCSHP'
@@ -28,16 +28,16 @@ print("Files are: ",files)
 
 for inf in (files):
 #######Input fileの読み込み(行ごと)#########
-    f = open(os.path.join('./bufr/data/',inf), 'r', encoding='UTF-8')
+    f = open(os.path.join('./data',inf), 'r', encoding='UTF-8')
 
     count = 0
-    with open(os.path.join('./bufr/data/',inf)) as f:
+    with open(os.path.join('./data',inf)) as f:
         for line in f:
             count += 1
     print('Num of lines: ',count)
     f.close()
 
-    f = open(os.path.join('./bufr/data/',inf), 'r', encoding='UTF-8')
+    f = open(os.path.join('./data',inf), 'r', encoding='UTF-8')
 
     datas =[]
 
@@ -61,7 +61,7 @@ for inf in (files):
 
     for i in range(count-3):
         lon.append(float(datas[i][10:17]))
-        lat.append(float(datas[i][18:25]))
+        lat.append(float(datas[i][17:25]))
         #elv.append(float(datas[i][26:33]))
         obs_time.append(float(datas[i][34:40]))
         lev.append(int(datas[i][66:70]))
