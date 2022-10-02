@@ -1,5 +1,4 @@
 # Scripts for plotting observational data included in prepbufr file (NCEP ds337.0) using GMT v5.4.5
-### By T., Shirai 
 ### All the codes are now under developing. You may use it freely, but at your own risk.
 
 ## Data preparation
